@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+ :root {
+    --color-green: #38AF90;
+    --color-white: #ffffff;
+    --color-gray: #797979;
+    --color-light-grey: #F0F0F0;
+    --color-pink: #dd7e92;
+    --color-text-input: #c4c4c4;
+    --color-footer: #383838;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    color: unset;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: var(--color-green);
+}
+
+.container {
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+nav h1 {
+    font-size: 18px;
+    margin: 0 10px 0 10px;
+    color: var(--color-white);
+}
+
+.menu-itens ul {
+    display: none;
+}
+
+.menu-itens img {
+    width: 62px;
+    margin: 0 10px 0 10px;
+}
+
+.section-news {
+    padding: 10px;
+}
+
+.section-news h2 {
+    color: var(--color-gray);
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-news h3 {
+    color: var(--color-green);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 6px;
+    margin-bottom: 3px;
+}
+
+.card-news h4 {
+    color: var(--color-gray);
+    font-size: 12px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--color-green);
+    margin-bottom: 5px;
+}
+
+.card-news {
+    background-color: var(--color-light-grey);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.card-news a {
+    color: var(--color-pink);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.date {
+    font-size: 10px;
+    color: var(--color-green);
+    margin-bottom: 12px;
+}
+
+.paragraph {
+    color: var(--color-gray);
+    font-size: 10px;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+.card-button input {
+    background: var(--color-pink);
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 1px solid var(--color-pink);
+    width: 244px;
+    height: 67px;
+}
+
+#games {
+    background-color: var(--color-light-grey);
+}
+
+#games h2 {
+    font-size: 24px;
+    padding: 40px 0px 30px 0px;
+    color: var(--color-green);
+    text-align: center;
+}
+
+.section-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-games {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 300px;
+    margin: 0 15px 30px 10px;
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+.card-games img {
+    width: 300px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-games h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-gray);
+    padding-top: 27.46px;
+}
+
+.card-games span {
+    color: var(--color-green);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.text-one {
+    color: var(--color-gray);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.text-two {
+    color: var(--color-green);
+    font-size: 36px;
+    font-weight: 700;
+    padding: 13px;
+}
+
+.section-singup {
+    color: var(--color-gray);
+}
+
+.section-singup form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 24px;
+    background-color: var(--color-light-grey);
+    border-radius: 8px;
+    margin: 12px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    width: 800px;
+}
+
+.card-singup {
+    display: flex;
+    justify-content: center;
+}
+
+.section-singup h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card-singup form {
+    padding: 70px 8px;
+}
+
+.card-button-singup {
+    text-align: center;
+}
+
+.card-button-singup input {
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    width: 244px;
+    height: 67px;
+    margin: 10px;
+}
+
+.card-submit input {
+    background: var(--color-pink);
+    color: var(--color-white);
+    border: 1px solid var(--color-pink);
+}
+
+.card-reset input {
+    background: var(--color-white);
+    color: var(--color-pink);
+    border: 2px solid var(--color-pink);
+}
+
+.card-box {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-singup-subscribe {
+    font-size: 16px;
+}
+
+.card-round {
+    display: flex;
+    padding-top: 8px;
+}
+
+.card-box input,
+.card-round input {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray);
+    color: var(--color-text-input);
+}
+
+.card-round input {
+    width: 23px;
+    height: 23px;
+    margin-right: 8px;
+}
+
+.card-box input {
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 13px 22px;
+}
+
+#ctlr-news {
+    margin-top: 30px;
+}
+
+footer {
+    background-color: var(--color-footer);
+    color: var(--color-white);
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.section-footer {
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-two {
+    padding: 37px;
+}
+
+@media(min-width: 576px) {
+    .card-singup-subscribe {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media(min-width: 768px) {
+    nav h1 {
+        font-size: 24px;
+    }
+    .menu-itens {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--color-white);
+        font-size: 14px;
+    }
+    .menu-itens ul {
+        display: inline-flex;
+    }
+    .menu-itens li {
+        padding: 0 30px;
+    }
+    #news h2 {
+        font-size: 36px;
+        margin: 30px 0;
+    }
+    .card-news h3 {
+        font-size: 24px;
+    }
+    .card-news h4 {
+        font-size: 16px;
+    }
+    .date {
+        margin-bottom: 16px;
+    }
+    #games h2 {
+        font-size: 36px;
+    }
+    .card-button-singup {
+        display: flex;
+        justify-content: center;
+    }
+    .card-button-singup input {
+        margin: 20px;
+    }
+    .card-singup-subscribe {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .section-singup h2 {
+        font-size: 36px;
+    }
+    .footer-two {
+        padding: 0;
+    }
+    footer {
+        padding: 74px 20px 74px 20px;
+        margin-top: 60px;
+    }
+    .section-footer {
+        padding: 30px 0 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media(min-width: 992px) {
+    .card-games {
+        margin-bottom: 70px;
+    }
+    .section-games {
+        justify-content: space-around;
+        align-items: center;
+    }
+}
